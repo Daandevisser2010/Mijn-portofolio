@@ -1,3 +1,4 @@
+/* Moderne styling voor je website */
 :root {
     --primary-bg-color: #f4f1ff;
     --primary-color: #20c9a6;
@@ -27,6 +28,41 @@ header {
     box-shadow: var(--shadow);
 }
 
+/* Navigatiebalk met actieknoppen bovenaan */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e5defc;
+    transform: translateY(-2px);
+}
+
+.navbar .actieknop {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar .actieknop:hover {
+    background-color: #17a98c;
+}
+
 main {
     max-width: 900px;
     width: calc(100% - 32px);
@@ -53,11 +89,6 @@ p {
 a {
     color: var(--secondary-color);
     font-weight: 600;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 button {
@@ -97,6 +128,15 @@ footer {
         width: calc(100% - 24px);
         margin: 20px auto;
         padding: 20px;
+    }
+
+    .navbar {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
     }
 
     h2 {
