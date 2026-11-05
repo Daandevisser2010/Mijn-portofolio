@@ -1,0 +1,38 @@
+:root {
+  --primary-bg-color:#e5defc;
+  --primary-color: #1edcb9;
+  --secundary-color: #5b3cc4;
+}
+
+body {
+   background-color: var(--primary-bg-color);
+    color: #2d2a3d;
+    font-family: Arial, sans-serif;
+ }
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+h2 {
+    background-color: var(--secundary-color);
+}
+
+p {
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(#1edcb9);
+    color: white;
+    text-align: center;
+}
+        footer {
+            background-color: var(--primary-color);
+            color: #4a4266;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid var(--secundary-color);
+        }
